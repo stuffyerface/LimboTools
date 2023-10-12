@@ -1,7 +1,7 @@
 register("command", () => {
 	const ItemStack = Java.type('net.minecraft.item.ItemStack');
 	const Enchantment = Java.type('net.minecraft.enchantment.Enchantment');
-	let items = ["minecraft:diamond_axe", "minecraft:diamond_pickaxe", "minecraft:shears"]
+	let items = ["minecraft:diamond_pickaxe", "minecraft:diamond_axe", "minecraft:diamond_shovel", "minecraft:shears"]
 	for(x in items){
 		let nbt = new ItemStack(new Item(items[x]).getItem())
 		nbt.func_77966_a(Enchantment.field_77349_p ,10)
